@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+--cor-topo:#474b57;
+--cor-footer:#c0b3fa;
+--fonte:'abhaya libre','roboto';
+--cor-fonte:#000000;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--fonte);
+    font-size: 16px;
+
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin:0 auto;
+}
+
+header .logo{
+    display: flex;
+    height: 35px;
+    width: 65px;
+    
+}
+
+header .logo-menu{
+    display:flex;
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header .logo-alt{
+    display: none;
+}
+
+header .menu-principal>ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform:uppercase;
+}
+
+header .menu-principal a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+header .menu-principal a:hover{
+    color:cadetblue;
+    border-bottom:teal 0.7rem solid;
+}
+
+header .banner{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "imagem-titulo";
+}
+
+
